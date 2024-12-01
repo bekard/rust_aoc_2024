@@ -10,8 +10,6 @@ fn main() {
     let mut first_vec = Vec::<u32>::new();
     let mut second_vec = Vec::<u32>::new();
 
-    let mut count = 1u32;
-
     while reader.read_line(&mut line).unwrap() > 0 {
         let nums: Vec<&str> = line.split_whitespace().collect();
         assert_eq!(nums.len(), 2);
